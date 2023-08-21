@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+html{
+    font-size: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    font-size: 100%;
+    margin: 0;
+    padding: 0;  
+    background-color: rgb(245, 7, 7);     
+}
+
+.principal {
+    width:100%; 
+    padding: .625rem;
+    max-width: 93.75rem; 
+    margin: .625rem auto; 
+    color: aquamarine;    
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+}
+
+
+/* MENU */
+.principal__menu{
+    position: relative;
+    display: block;    
+    width: auto;
+    height: 43.75rem;     
+    margin: 0rem;     
+    background-image: url('imagenes/ciudad_nocturna.jpg');
+    background-size: 100% auto; /* Ancho 100%, altura automática para mantener la proporción */
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+
+.menu__entrada{
+    position: fixed bottom;
+    display: flex;
+    width: 13%; 
+    height: 13%;
+    margin: .625rem;    
+    align-items: center;
+    padding: .3125rem .3125rem;
+    border-radius: .625rem;
+    border: .0625rem solid rgb(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;    
+    background: transparent;
+    backdrop-filter: blur(.9375rem);
+    z-index: 1;
+    opacity: 0.4; /* Inicialmente oculto */
+    transition: opacity 2.5s; /* Agregar una transición suave */
+}
+
+.principal__menu:hover .menu__entrada {
+    opacity: 1; /* Mostrar cuando se coloca el mouse sobre .madre */
+}
+
+.entrada__nombre {/*span*/
+    font-size: 1.5rem;        
+}
+
+.nombre__link {/*a*/
+    text-decoration: none;
+    color: rgba(250, 235, 215, 0.39);
+}
+
+/*
+.sobremi { top: 32.5rem; left: 37.5rem;}
+.habilidades { top: 32.5rem; left: 3.125rem;}
+.portafolio { top: 32.5rem; left: 20rem;}
+.curriculum { top: 32.5rem; left: 56.25rem;}
+.contactos { top: 32.5rem; left: 75rem;}
+*/
+
+
+.menu__entrada--sobremi :hover {
+    color: rgb(7, 252, 81);}
+.menu__entrada--habilidades :hover {
+    color: rgb(7, 252, 81);}
+.menu__entrada--portafolio :hover { 
+    color: rgb(7, 252, 81);}
+.menu__entrada--curriculum :hover { 
+    color: rgb(7, 252, 81);}
+.menu__entrada--contactos :hover { 
+    color: rgb(7, 252, 81);}

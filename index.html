@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SOLO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section class="principal">
+        <div class="principal__menu" id="menu">            
+            <div class="menu__entrada menu__entrada--sobremi">
+                <span class="entrada__nombre">
+                    <a class="nombre__link" href="sobremi.html">Sobre mí</a>
+                </span>
+            </div> 
+
+            <div class="menu__entrada menu__entrada--habilidades">
+                <span class="entrada__nombre">
+                    <a class="nombre__link" href="habilidades.html">Habilidades</a>
+                </span>
+            </div>
+
+            <div class="menu__entrada menu__entrada--portafolio">
+                <span class="entrada__nombre">
+                    <a class="nombre__link" href="portafolio.html">Portafolio</a>
+                </span>
+            </div>
+
+            <div class="menu__entrada menu__entrada--curriculum">
+                <span class="entrada__nombre">
+                    <a class="nombre__link" href="curriculum.html">Curriculum</a>
+                </span>
+            </div>
+
+            <div class="menu__entrada menu__entrada--contactos">
+                <span class="entrada__nombre">
+                    <a class="nombre__link" href="contactos.html">Contacto</a>
+                </span>
+            </div>           
+        </div>
+    </section> 
+    <section class="secciones" id="sobremi">
+        <div class="cajon-sobremi">  
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Carlos Yasser.</span> Mi nombre es Carlos Yasser y estoy encantado
+                 de darles la bienvenida a mi portafolio web. Recientemente he completado un curso
+                  de un año en programación web, donde he adquirido conocimientos sólidos y 
+                  habilidades en diferentes tecnologías y lenguajes de programación. A través de 
+                  esta página, quiero compartir con ustedes mi pasión por el desarrollo web y 
+                  mostrarles los proyectos en los que he trabajado. Estoy emocionado por compartir 
+                  mi trayectoria en el desarrollo web y espero que encuentren inspiración en mis 
+                  proyectos. No duden en contactarme si desean más información o colaborar en 
+                  futuros proyectos. ¡Disfruten explorando mi portafolio!
+    
+                  Bienvenidos,.</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            03-03-1977
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            638000000
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            carlosyasser@example.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.carlosyasser.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Vallcarca, CP:08023. Barcelona
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span onclick="document.getElementById('sonido-lloro').play()" >
+                              Desempleado
+                              <audio id="sonido-lloro" src="sound/man-crying.mp3"></audio>
+                            </span>
+                          </li>
+                    </ul>
+                </div>
+    
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa fa-pagelines" aria-hidden="true"></i>
+                            <span onclick="document.getElementById('sonido-hojas').play()" >
+                                Hobby
+                                <audio id="sonido-hojas" src="sound/naturalez.mp3"></audio>
+                            </span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span>Parapiscología</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div> 
+                        
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>   
+</body>
+</html>
