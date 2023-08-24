@@ -1,0 +1,459 @@
+
+html {
+  font-family: 'Righteous';
+  font-size: 1.125rem;
+  /* me permite deslizar cuando hago clic en los links del menu */
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;  
+}
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background: rgba(238, 44, 238, 0.5);  
+  padding: 0px .625rem;
+  align-items: center;
+  width: 100%;
+  max-height: 5rem;
+  border-bottom: .0625rem solid rgb(7, 7, 7);
+  z-index: 99;
+}
+.texto{  
+  display: flex;
+  flex-direction: row;      
+  height: 4.3125rem;
+
+}
+header h1{
+  font-size: 2.500rem;    
+}
+.inicio h2{font-size: 2.625rem;}
+header h4{  
+  font-size: 1rem;  
+  margin: 5px 0;  
+  ;  
+}
+h4:hover{
+  color: white;
+}
+
+nav {  
+  margin: 10px;
+  }
+
+  nav > a{
+    color:#0c0c0c;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* Add your flexbox CSS below here */
+
+.inicio{
+  display: flex;  
+  position: relative;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  height: 120vh; /* Ajusta la altura de la section al 100% del viewport */
+  background-image: url(imagenes/fondo-inicio.png);
+  border: .1875rem solid rgba(238, 44, 238);
+}
+.inicio__article {
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  color:antiquewhite;
+  flex: 200px;
+  border-radius: .9375rem;
+  border: .125rem solid rgba(238, 44, 238, 0.993);
+}
+
+  /*contenido^*/
+
+.sobremi{
+  background-image: url(imagenes/fondo2.jpg);
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  border: .1875rem solid rgba(238, 44, 238);
+  color: #080808;
+  padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.sobremi h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+
+}
+.sobremi .contenido-seccion p{
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  
+  background: transparent;
+  backdrop-filter: blur(15px);
+}
+.sobremi .contenido-seccion p span{
+  color: #070707;
+  font-weight: bold;
+}
+.sobremi .fila{
+  display: flex;
+}
+.sobremi .fila .col
+{
+  width: 50%;
+}
+.sobremi .fila .col h3{
+  font-size: 28px;
+  font-family: 'Righteous';
+  margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+  list-style: none;
+}
+.sobremi .fila .col ul li{
+  margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+  display: inline-block;
+  color: #000000;
+  width: 130px;
+}
+.sobremi .fila .col ul li span{
+  background-color: rgba(238, 44, 238, .6);
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+  width: 105px;
+  height: 100px;
+  background-color: #252A2E;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+  background-color:rgba(238, 44, 238);
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.sobremi button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.sobremi button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(238, 44, 238);
+  z-index: -1;
+  transition: 1s;
+}
+.sobremi button:hover .overlay{
+  width: 100%;
+}
+
+
+/* SECCION S K I L L S */
+.skills{
+  background-image: url(imagenes/fondo1.jpg);
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  border: .1875rem solid rgba(238, 44, 238);
+  color: #080808;
+  padding: 50px 20px;
+}
+.skills .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+
+  background-color: rgba(238, 44, 238, .5);
+}
+.skills h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+
+}
+.skills .fila{
+  display: flex;
+}
+.skills .fila .col{
+  width: 50%;
+  padding: 0 85px;
+}
+.skills .fila .col h3{
+  font-size: 28px;
+  font-family: 'Righteous';
+  margin-bottom: 25px;
+}
+.skills .skill > span{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+  height: 8px;
+  width: 65%;
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skills .skill .progreso{
+  background-color: #1CB698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+.skills .skill .barra-skill span{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1CB698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+
+/* SECCION PORTFOLIO */
+.portfolio{
+  background-image: url(imagenes/fondo5.png);
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  border: .1875rem solid rgba(238, 44, 238);  
+  color: white;
+  padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;  
+}
+.portfolio h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+  color: rgba(238, 44, 238);
+}
+.portfolio .galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid rgba(238, 44, 238);
+}
+.portfolio .galeria .proyecto img{
+  width: 100%;
+  display: block;
+}
+.portfolio .galeria .proyecto .overlay{ /*boton descargar CV*/
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+  opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+  margin-bottom: 0px;
+}
+
+/* SECCION CONTACTO */
+.contacto{
+  background-image: url(imagenes/fondo4.jpg);
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  border: .1875rem solid rgba(238, 44, 238);
+  
+  padding: 50px 0;
+}
+.contacto .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.contacto h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+  color: #000000;
+}
+.contacto .fila{
+  display: flex;
+}
+.contacto .col{
+  width: 50%;
+  padding: 10px;
+  position: relative;
+  border: .125rem solid rgba(238, 44, 238);
+}
+.contacto .col input, .contacto .col textarea{
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;    
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  border: .125rem solid rgba(238, 44, 238);
+}
+.contacto button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid rgba(238, 44, 238);
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #000000;
+  position: relative;
+  z-index: 10;
+}
+.contacto button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(238, 44, 238);
+  z-index: -1;
+  transition: 1s;
+}
+.contacto button:hover .overlay{
+  width: 100%;
+}
+.contacto .col img{
+  width: 100%;
+  border: 2px solid rgba(238, 44, 238);
+}
+.contacto .col .info{
+  position: absolute;
+  border: 2px solid rgba(238, 44, 238);
+  color: #000000;
+  top: 40%;
+  background-color: #252A2E;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  max-width: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+  list-style: none;
+}
+.contacto .col .info ul li{
+  margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+  color: rgba(238, 44, 238);
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+footer{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .redes{
+  margin-bottom: 20px;
+}
+footer .redes a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+footer .arriba{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1CB698;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
