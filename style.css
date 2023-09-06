@@ -494,10 +494,24 @@ nav > a:hover{
 }
 
 }
-@media screen and (min-width: 401px) and (max-width:706px){
-
+@media screen and (min-width:416px) and (max-width:706px){
+  .inicio{
+    width: 130%;
+  }
+  .sobremi{
+    width: 123%;
+  }
+  .skills{
+    width: 123%;
+  }
+  .portfolio{
+    width: 123%;
+  }
+  .contacto{
+    width: 130%;
+  }
   header{
-    max-width: 70%;
+    width: 73%;
   }  
   
   header .texto h1{
@@ -570,12 +584,46 @@ nav.responsive a{
       display: block;
   }
   .contacto .fila .col{
-      width: 100%;
+      width: 95%;
   }
+  .contacto .col input, .contacto .col textarea{    
+    width: 72%;    
+  }
+  .contacto .info{
+    margin-left: 1.625rem;
+  }
+  .contacto .contenido-seccion .fila .col .map{   
+    width: 15rem;
+    position: relative;
+    top: .9375rem;
+}
+.contacto .col img{
+  width: 75%;
+  border: .125rem solid rgba(238, 44, 238);
+}
 }
 
 
-@media screen and (max-width:400px){
+@media screen and (max-width:415px){
+  .inicio{
+    width: 130%;
+  }
+  .sobremi{
+    width: 123%;
+  }
+  .skills{
+    width: 123%;
+  }
+  .portfolio{
+    width: 123%;
+  }
+  .contacto{
+    width: 130%;
+  }
+  header{
+    width: 73%;
+  }  
+
   header .texto h1{
     font-size: 1.5rem;
   }
@@ -607,7 +655,7 @@ nav.responsive a{
 }
 .contacto .contenido-seccion .fila .col .map{   
   position: absolute;
-  top: 14.375rem;
+  top: 8.375rem;
   left: 9.375rem;
   border: .125rem solid rgb(2, 252, 85);
 }
@@ -647,7 +695,9 @@ nav.responsive a{
   .curriculum .fila .derecha{
       margin-left: 20px;
   }
-
+  .portfolio .contenido-seccion h2{
+    font-size: 2rem;
+  }
   .portfolio .galeria{
       display: block;
       width: 100%;
@@ -661,9 +711,7 @@ nav.responsive a{
   .contacto .fila{
       display: block;
   }
-  .contacto .fila .col{
-      width: 100%;
-  }
+
 }
 
 
