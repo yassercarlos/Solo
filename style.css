@@ -5,10 +5,12 @@ html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
-body {
-  padding: 0;
-  margin: 0;  
-}
+  * {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 header {
   display: flex;
   position: fixed;
@@ -16,7 +18,7 @@ header {
   background: rgba(238, 44, 238, 0.5);  
   padding: 0rem 3.125rem;
   align-items: center;
-  width: 95%;
+  width: 100%;
   max-height: 5rem;
   border-bottom: .0625rem solid rgb(7, 7, 7);
   z-index: 99;
@@ -396,7 +398,7 @@ nav > a:hover{
 }
 .contacto .col input, .contacto .col textarea{
   display: block;
-  width: 90%;
+  width: 92%;
   padding: 1.125rem;
   border: none;
   margin-bottom: 1.25rem;    
@@ -494,10 +496,13 @@ nav > a:hover{
 }
 
 }
-@media screen and (min-width: 401px) and (max-width:706px){
-
+@media screen and (min-width:416px) and (max-width:706px){
+  .texto{
+    display: block;
+  }
+ 
   header{
-    max-width: 70%;
+    width: 100%;
   }  
   
   header .texto h1{
@@ -570,12 +575,36 @@ nav.responsive a{
       display: block;
   }
   .contacto .fila .col{
-      width: 100%;
+      width: 95%;
   }
+  .contacto .col input, .contacto .col textarea{    
+    width: 72%;    
+  }
+  .contacto .info{
+    margin-left: 1.625rem;
+  }
+  .contacto .contenido-seccion .fila .col .map{   
+    width: 15rem;
+    position: relative;
+    top: .9375rem;
+}
+.contacto .col img{
+  width: 75%;
+  border: .125rem solid rgba(238, 44, 238);
+}
 }
 
 
-@media screen and (max-width:400px){
+@media screen and (min-width:315px) and (max-width:415px){
+
+  .texto{
+    display: block;
+  }
+  
+  header{
+    width: 100%;
+  }  
+
   header .texto h1{
     font-size: 1.5rem;
   }
@@ -607,7 +636,7 @@ nav.responsive a{
 }
 .contacto .contenido-seccion .fila .col .map{   
   position: absolute;
-  top: 14.375rem;
+  top: 8.375rem;
   left: 9.375rem;
   border: .125rem solid rgb(2, 252, 85);
 }
@@ -647,7 +676,9 @@ nav.responsive a{
   .curriculum .fila .derecha{
       margin-left: 20px;
   }
-
+  .portfolio .contenido-seccion h2{
+    font-size: 2rem;
+  }
   .portfolio .galeria{
       display: block;
       width: 100%;
@@ -661,8 +692,105 @@ nav.responsive a{
   .contacto .fila{
       display: block;
   }
-  .contacto .fila .col{
+
+}
+
+@media screen and (max-width:315px){
+
+  
+  .texto{
+    display: block;
+  }
+  
+  header{
+    width: 100%;
+  }  
+
+  header .texto h1{
+    font-size: 1rem;
+  }
+
+  nav{
+    display: none;
+}
+.nav-responsive{
+    display: block;
+    
+}
+nav.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 3.6875rem;
+    padding-left: .625rem;    
+    background-color: #584a4ad2;
+   
+}
+nav.responsive ul{
+    display: block !important;      
+}
+nav.responsive a{
+    border-bottom: 1px solid #fff;
+    padding: .625rem 0;
+}
+.contacto .contenido-seccion .fila .col .map{   
+  position: absolute;
+  top: 8.375rem;
+  left: 9.375rem;
+  border: .125rem solid rgb(2, 252, 85);
+}
+
+
+  .sobremi .fila{
+      display: block;
+  }
+  .sobremi .fila .col{
+      width: fit-content;
+  }
+
+  .skills .fila{
+      display: block;
+      margin-top: .625rem;
+      border-bottom: 1px solid chartreuse;
+  }
+  .skills .contenido-seccion h2{
+    margin: 10px 0;
+  }
+  .skills .fila h3{
+    width: 90%;     
+}
+  .skills .fila .col{
       width: 100%;
+  }
+  .skills .fila .col .barra-skill{
+      width: 50%;
+  }
+
+  .curriculum .fila{
+      display: block;
+  }
+  .curriculum .fila .col{
+      width: 90%;
+  }
+  .curriculum .fila .derecha{
+      margin-left: 20px;
+  }
+  .portfolio .contenido-seccion h2{
+    font-size: 2rem;
+  }
+  .portfolio .galeria{
+      display: block;
+      width: 100%;
+  }
+  .portfolio .galeria .proyecto{
+      max-width: 100%;
+  }
+  .portfolio .galeria .proyecto img{
+      width: 100%;
+  }
+  .contacto .fila{
+      display: block;
   }
 }
 
